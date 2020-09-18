@@ -37,11 +37,11 @@ $tweaks = @(
 	### Privacy Tweaks ###
 	"DisableTelemetry",             # "EnableTelemetry",
 	"DisableWiFiSense",             # "EnableWiFiSense",
-	"DisableSmartScreen",        	# "EnableSmartScreen",
+	"DisableSmartScreen",         	# "EnableSmartScreen",
 	"DisableWebSearch",             # "EnableWebSearch",
 	"DisableAppSuggestions",        # "EnableAppSuggestions",
 	"DisableActivityHistory",       # "EnableActivityHistory",
-	"DisableBackgroundApps",        # "EnableBackgroundApps",
+	"DisableBackgroundApps",       	# "EnableBackgroundApps",
 	"DisableLocationTracking",      # "EnableLocationTracking",
 	"DisableMapUpdates",            # "EnableMapUpdates",
 	"DisableFeedback",              # "EnableFeedback",
@@ -49,7 +49,7 @@ $tweaks = @(
 	"DisableAdvertisingID",         # "EnableAdvertisingID",
 	"DisableCortana",               # "EnableCortana",
 	"DisableErrorReporting",        # "EnableErrorReporting",
-	"SetP2PUpdateLocal",        	# "SetP2PUpdateInternet",
+	"SetP2PUpdateLocal",          	# "SetP2PUpdateInternet",
 	"DisableDiagTrack",             # "EnableDiagTrack",
 	"DisableWAPPush",               # "EnableWAPPush",
 
@@ -63,70 +63,70 @@ $tweaks = @(
 	"SetCurrentNetworkPrivate",     # "SetCurrentNetworkPublic",
 	"SetUnknownNetworksPrivate",  	# "SetUnknownNetworksPublic",
 	"DisableNetDevicesAutoInst",  	# "EnableNetDevicesAutoInst",
-	"DisableCtrldFolderAccess",	# "EnableCtrldFolderAccess",    
-	# "DisableFirewall",            # "EnableFirewall",
+	"DisableCtrldFolderAccess",		# "EnableCtrldFolderAccess",
+	"DisableFirewall",            	# "EnableFirewall",
 	"DisableDefender",            	# "EnableDefender",
-	"DisableDefenderCloud",       	# "EnableDefenderCloud",
+	"DisableDefenderCloud",      	# "EnableDefenderCloud",
 	"EnableF8BootMenu",             # "DisableF8BootMenu",
 	# "SetDEPOptOut",               # "SetDEPOptIn",
-	# "EnableCIMemoryIntegrity",   	# "DisableCIMemoryIntegrity",
+	# "EnableCIMemoryIntegrity",    # "DisableCIMemoryIntegrity",
 	# "DisableScriptHost",          # "EnableScriptHost",
 	# "EnableDotNetStrongCrypto",   # "DisableDotNetStrongCrypto",
-	"DisableMeltdownCompatFlag",	# "EnableMeltdownCompatFlag"    
+	"DisableMeltdownCompatFlag",	# "EnableMeltdownCompatFlag"
 
 	### Service Tweaks ###
 	"DisableUpdateMSRT",          	# "EnableUpdateMSRT",
 	"DisableUpdateDriver",        	# "EnableUpdateDriver",
 	"DisableUpdateRestart",         # "EnableUpdateRestart",
 	"DisableHomeGroups",          	# "EnableHomeGroups",
-	"DisableSharedExperiences",     # "EnableSharedExperiences",
-	"DisableRemoteAssistance",      # "EnableRemoteAssistance",
-	"EnableRemoteDesktop",          # "DisableRemoteDesktop",
+	"DisableSharedExperiences",   	# "EnableSharedExperiences",
+	"DisableRemoteAssistance",    	# "EnableRemoteAssistance",
+	"EnableRemoteDesktop",        	# "DisableRemoteDesktop",
 	"DisableAutoplay",              # "EnableAutoplay",
 	"DisableAutorun",               # "EnableAutorun",
-	"DisableStorageSense",		# "EnableStorageSense",
+	"DisableStorageSense",			# "EnableStorageSense",
 	"DisableDefragmentation",     	# "EnableDefragmentation",
 	"DisableSuperfetch",          	# "EnableSuperfetch",
 	"DisableIndexing",            	# "EnableIndexing",
 	"SetBIOSTimeUTC",             	# "SetBIOSTimeLocal",
-	"DisableHibernation",		# "EnableHibernation",
-	"EnableSleepButton"		# "DisableSleepButton",,
-	"DisableSleepTimeout",        	# "EnableSleepTimeout",
-	"DisableFastStartup", 	        # "EnableFastStartup",
+	"DisableHibernation",			# "EnableHibernation",
+	"DisableSleepButton",         	# "EnableSleepButton",
+	"DisableSleepTimeout",			# "EnableSleepTimeout",
+	"DisableFastStartup",         	# "EnableFastStartup",
 
 	### UI Tweaks ###
-	"DisableActionCenter",          # "EnableActionCenter",
-	"EnableLockScreen",		# "DisableLockScreen",
-	"DisableLockScreenRS1",		# "EnableLockScreenRS1",
+	"DisableActionCenter",        	# "EnableActionCenter",
+	"DisableLockScreen",          	# "EnableLockScreen",
+	"DisableLockScreenRS1",       	# "EnableLockScreenRS1",
 	# "HideNetworkFromLockScreen",  # "ShowNetworkOnLockScreen",
 	# "HideShutdownFromLockScreen", # "ShowShutdownOnLockScreen",
-	"DisableStickyKeys",            # "EnableStickyKeys",
+	"DisableStickyKeys",          	# "EnableStickyKeys",
 	"ShowTaskManagerDetails"        # "HideTaskManagerDetails",
 	"ShowFileOperationsDetails",    # "HideFileOperationsDetails",
-	# "DisableFileDeleteConfirm",	# "EnableFileDeleteConfirm",
+	"EnableFileDeleteConfirm",    	# "DisableFileDeleteConfirm",
 	"HideTaskbarSearch",
 	# "ShowTaskbarSearchIcon",     	# "ShowTaskbarSearchBox",
-	"HideTaskView",                 # "ShowTaskView",
+	"HideTaskView",               	# "ShowTaskView",
 	# "ShowSmallTaskbarIcons",      # "ShowLargeTaskbarIcons",
 	# "SetTaskbarCombineWhenFull",  # "SetTaskbarCombineNever",     # "SetTaskbarCombineAlways",
 	# "HideTaskbarPeopleIcon",      # "ShowTaskbarPeopleIcon",
-	"ShowTrayIcons",                # "HideTrayIcons",
-	"DisableSearchAppInStore",      # "EnableSearchAppInStore",
-	"DisableNewAppPrompt",          # "EnableNewAppPrompt",
+	"ShowTrayIcons",              	# "HideTrayIcons",
+	"DisableSearchAppInStore",    	# "EnableSearchAppInStore",
+	"DisableNewAppPrompt",        	# "EnableNewAppPrompt",
 	# "SetControlPanelSmallIcons",  # "SetControlPanelLargeIcons",  # "SetControlPanelCategories",
 	# "SetVisualFXPerformance",     # "SetVisualFXAppearance",
 	# "AddENKeyboard",              # "RemoveENKeyboard",
 	# "EnableNumlock",              # "DisableNumlock",
-	"EnableDarkMode",		# "DisableDarkMode",
+	"EnableDarkMode",				# "DisableDarkMode",
 	"Stop-EdgePDF",
-	
+
 	### Explorer UI Tweaks ###
 	"ShowKnownExtensions",          # "HideKnownExtensions",
-	# "ShowHiddenFiles",            # "HideHiddenFiles",
-	"HideSyncNotifications"         # "ShowSyncNotifications",
-	# "HideRecentShortcuts",        # "ShowRecentShortcuts",
+	"ShowHiddenFiles",            	# "HideHiddenFiles",
+	"HideSyncNotifications"       	# "ShowSyncNotifications",
+	"HideRecentShortcuts",        	# "ShowRecentShortcuts",
 	"SetExplorerThisPC",            # "SetExplorerQuickAccess",
-	"HideThisPCFromDesktop",	# "ShowThisPCOnDesktop",
+	"HideThisPCFromDesktop",		# "ShowThisPCOnDesktop",
 	# "ShowUserFolderOnDesktop",    # "HideUserFolderFromDesktop",
 	# "HideDesktopFromThisPC",      # "ShowDesktopInThisPC",
 	# "HideDesktopFromExplorer",    # "ShowDesktopInExplorer",
@@ -146,17 +146,17 @@ $tweaks = @(
 	# "DisableThumbsDB",            # "EnableThumbsDB",
 
 	### Application Tweaks ###
-	"DisableOneDrive",              # "EnableOneDrive",
-	"UninstallOneDrive",            # "InstallOneDrive",
-	"UninstallMsftBloat",           # "InstallMsftBloat",
+	"DisableOneDrive",            	# "EnableOneDrive",
+	"UninstallOneDrive",          	# "InstallOneDrive",
+	"UninstallMsftBloat",         	# "InstallMsftBloat",
 	"UninstallThirdPartyBloat",     # "InstallThirdPartyBloat",
 	# "UninstallWindowsStore",      # "InstallWindowsStore",
 	# "DisableXboxFeatures",        # "EnableXboxFeatures",
-	"DisableAdobeFlash",            # "EnableAdobeFlash",
-	"InstallMediaPlayer", 		# "UninstallMediaPlayer",
-	"UninstallInternetExplorer",  	# "InstallInternetExplorer",
-	"UninstallWorkFolders",       	# "InstallWorkFolders",
-	"InstallLinuxSubsystem",      	# "UninstallLinuxSubsystem",
+	"DisableAdobeFlash",          	# "EnableAdobeFlash",
+	"InstallMediaPlayer",			# "UninstallMediaPlayer",
+	"UninstallInternetExplorer",  # "InstallInternetExplorer",
+	"UninstallWorkFolders",       # "InstallWorkFolders",
+	"InstallLinuxSubsystem",      # "UninstallLinuxSubsystem",
 	# "InstallHyperV",              # "UninstallHyperV",
 	"SetPhotoViewerAssociation",    # "UnsetPhotoViewerAssociation",
 	"AddPhotoViewerOpenWith",       # "RemovePhotoViewerOpenWith",
@@ -2478,7 +2478,6 @@ Function DebloatAll {
 		
 		"*Microsoft.BingNews*"
 		"*Microsoft.BingWeather*"
-		"*Microsoft.DesktopAppInstaller*"
 		"*Microsoft.GetHelp*"
 		"*Microsoft.Getstarted*"
 		"*Microsoft.Messaging*"
@@ -2498,11 +2497,8 @@ Function DebloatAll {
 		"*Microsoft.Whiteboard*"
 		"*Microsoft.WindowsAlarms*"
 		"*microsoft.windowscommunicationsapps*"
-		"*Microsoft.WindowsFeedbackHub*"
 		"*Microsoft.WindowsMaps*"
 		"*Microsoft.WindowsSoundRecorder*"
-		"*Microsoft.Xbox.TCUI*"
-		"*Microsoft.XboxApp*"
 		"*Microsoft.YourPhone*"
 		"*Microsoft.ZuneMusic*"
 		"*Microsoft.ZuneVideo*"
