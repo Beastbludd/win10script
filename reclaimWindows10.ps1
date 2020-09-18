@@ -2499,6 +2499,8 @@ Function DebloatAll {
 		"*microsoft.windowscommunicationsapps*"
 		"*Microsoft.WindowsMaps*"
 		"*Microsoft.WindowsSoundRecorder*"
+		"*Microsoft.Xbox.TCUI*"
+		"*Microsoft.XboxApp*"
 		"*Microsoft.YourPhone*"
 		"*Microsoft.ZuneMusic*"
 		"*Microsoft.ZuneVideo*"
