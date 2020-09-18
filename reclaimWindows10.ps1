@@ -22,7 +22,7 @@
 #	- Enable Dark Mode
 #
 #	To run - 
-#	> powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JU0mH')"
+#	> powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JU0mS')"
 #
 #
 ##########
