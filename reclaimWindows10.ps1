@@ -16,6 +16,7 @@
 # 
 #    Note from author: Never run scripts without reading them & understanding what they do.
 #
+#
 #	Beastbludd's Additions:
 #	
 #	- Debloat more MS Store Apps
@@ -30,147 +31,143 @@
 $tweaks = @(
 	### Require administrator privileges ###
 	"RequireAdmin",
-	
-	### Debloat Extras
-	"DebloatAll",
 
 	### Privacy Tweaks ###
-	"DisableTelemetry",             # "EnableTelemetry",
-	"DisableWiFiSense",             # "EnableWiFiSense",
-	"DisableSmartScreen",         	# "EnableSmartScreen",
-	"DisableWebSearch",             # "EnableWebSearch",
-	"DisableAppSuggestions",        # "EnableAppSuggestions",
-	"DisableActivityHistory",       # "EnableActivityHistory",
-	"DisableBackgroundApps",       	# "EnableBackgroundApps",
-	"DisableLocationTracking",      # "EnableLocationTracking",
-	"DisableMapUpdates",            # "EnableMapUpdates",
-	"DisableFeedback",              # "EnableFeedback",
-	"DisableTailoredExperiences",   # "EnableTailoredExperiences",
-	"DisableAdvertisingID",         # "EnableAdvertisingID",
-	"DisableCortana",               # "EnableCortana",
-	"DisableErrorReporting",        # "EnableErrorReporting",
-	"SetP2PUpdateLocal",          	# "SetP2PUpdateInternet",
-	"DisableDiagTrack",             # "EnableDiagTrack",
-	"DisableWAPPush",               # "EnableWAPPush",
+	"DisableTelemetry",				# "EnableTelemetry",
+	"DisableWiFiSense",				# "EnableWiFiSense",
+	"DisableSmartScreen",			# "EnableSmartScreen",
+	"DisableWebSearch",				# "EnableWebSearch",
+	"DisableAppSuggestions",		# "EnableAppSuggestions",
+	"DisableActivityHistory",		# "EnableActivityHistory",
+	"DisableBackgroundApps",		# "EnableBackgroundApps",
+	"DisableLocationTracking",		# "EnableLocationTracking",
+	"DisableMapUpdates",			# "EnableMapUpdates",
+	"DisableFeedback",				# "EnableFeedback",
+	"DisableTailoredExperiences",	# "EnableTailoredExperiences",
+	"DisableAdvertisingID",			# "EnableAdvertisingID",
+	"DisableCortana",				# "EnableCortana",
+	"DisableErrorReporting",		# "EnableErrorReporting",
+	"SetP2PUpdateLocal",			# "SetP2PUpdateInternet",
+	"DisableDiagTrack",				# "EnableDiagTrack",
+	"DisableWAPPush",				# "EnableWAPPush",
 
 	### Security Tweaks ###
-	"SetUACLow",                  	# "SetUACHigh",
-	# "EnableSharingMappedDrives",  # "DisableSharingMappedDrives",
-	# "DisableAdminShares",         # "EnableAdminShares",
-	"DisableSMB1",                	# "EnableSMB1",
-	# "DisableSMBServer",           # "EnableSMBServer",
-	# "DisableLLMNR",               # "EnableLLMNR",
-	"SetCurrentNetworkPrivate",     # "SetCurrentNetworkPublic",
-	"SetUnknownNetworksPrivate",  	# "SetUnknownNetworksPublic",
-	"DisableNetDevicesAutoInst",  	# "EnableNetDevicesAutoInst",
-	"DisableCtrldFolderAccess",		# "EnableCtrldFolderAccess",
-	"DisableFirewall",            	# "EnableFirewall",
-	"DisableDefender",            	# "EnableDefender",
-	"DisableDefenderCloud",      	# "EnableDefenderCloud",
-	"EnableF8BootMenu",             # "DisableF8BootMenu",
-	# "SetDEPOptOut",               # "SetDEPOptIn",
-	# "EnableCIMemoryIntegrity",    # "DisableCIMemoryIntegrity",
-	# "DisableScriptHost",          # "EnableScriptHost",
-	# "EnableDotNetStrongCrypto",   # "DisableDotNetStrongCrypto",
-	"DisableMeltdownCompatFlag",	# "EnableMeltdownCompatFlag"
+	"SetUACLow",					# "SetUACHigh",
+	# "EnableSharingMappedDrives",	# "DisableSharingMappedDrives",
+	# "DisableAdminShares",			# "EnableAdminShares",
+	"DisableSMB1",					# "EnableSMB1",
+	# "DisableSMBServer",			# "EnableSMBServer",
+	# "DisableLLMNR",				# "EnableLLMNR",
+	"SetCurrentNetworkPrivate",		# "SetCurrentNetworkPublic",
+	"SetUnknownNetworksPrivate",	# "SetUnknownNetworksPublic",
+	"DisableNetDevicesAutoInst",	# "EnableNetDevicesAutoInst",
+	"EnableCtrldFolderAccess",		"DisableCtrldFolderAccess",
+	"DisableFirewall",				# "EnableFirewall",
+	"DisableDefender",				# "EnableDefender",
+	"DisableDefenderCloud",			# "EnableDefenderCloud",
+	"EnableF8BootMenu",				# "DisableF8BootMenu",
+	# "SetDEPOptOut",				# "SetDEPOptIn",
+	# "EnableCIMemoryIntegrity",	# "DisableCIMemoryIntegrity",
+	# "DisableScriptHost",			# "EnableScriptHost",
+	# "EnableDotNetStrongCrypto",	# "DisableDotNetStrongCrypto",
+	"EnableMeltdownCompatFlag"		# "DisableMeltdownCompatFlag",
 
 	### Service Tweaks ###
-	"DisableUpdateMSRT",          	# "EnableUpdateMSRT",
-	"DisableUpdateDriver",        	# "EnableUpdateDriver",
-	"DisableUpdateRestart",         # "EnableUpdateRestart",
-	"DisableHomeGroups",          	# "EnableHomeGroups",
-	"DisableSharedExperiences",   	# "EnableSharedExperiences",
-	"DisableRemoteAssistance",    	# "EnableRemoteAssistance",
-	"EnableRemoteDesktop",        	# "DisableRemoteDesktop",
-	"DisableAutoplay",              # "EnableAutoplay",
-	"DisableAutorun",               # "EnableAutorun",
-	"DisableStorageSense",			# "EnableStorageSense",
-	"DisableDefragmentation",     	# "EnableDefragmentation",
-	"DisableSuperfetch",          	# "EnableSuperfetch",
-	"DisableIndexing",            	# "EnableIndexing",
-	"SetBIOSTimeUTC",             	# "SetBIOSTimeLocal",
-	"DisableHibernation",			# "EnableHibernation",
-	"DisableSleepButton",         	# "EnableSleepButton",
+	"DisableUpdateMSRT",			# "EnableUpdateMSRT",
+	"DisableUpdateDriver",			# "EnableUpdateDriver",
+	"DisableUpdateRestart",			# "EnableUpdateRestart",
+	"DisableHomeGroups",			# "EnableHomeGroups",
+	"DisableSharedExperiences",		# "EnableSharedExperiences",
+	"DisableRemoteAssistance",		# "EnableRemoteAssistance",
+	"EnableRemoteDesktop",			# "DisableRemoteDesktop",
+	"DisableAutoplay",				# "EnableAutoplay",
+	"DisableAutorun",				# "EnableAutorun",
+	"EnableStorageSense",			"DisableStorageSense",
+	"DisableDefragmentation",		# "EnableDefragmentation",
+	"DisableSuperfetch",			# "EnableSuperfetch",
+	"DisableIndexing",				# "EnableIndexing",
+	"SetBIOSTimeUTC",				# "SetBIOSTimeLocal",
+	"EnableHibernation",			"DisableHibernation",
+	"DisableSleepButton",			# "EnableSleepButton",
 	"DisableSleepTimeout",			# "EnableSleepTimeout",
-	"DisableFastStartup",         	# "EnableFastStartup",
+	"DisableFastStartup",			# "EnableFastStartup",
 
 	### UI Tweaks ###
-	"DisableActionCenter",        	# "EnableActionCenter",
-	"DisableLockScreen",          	# "EnableLockScreen",
-	"DisableLockScreenRS1",       	# "EnableLockScreenRS1",
-	# "HideNetworkFromLockScreen",  # "ShowNetworkOnLockScreen",
-	# "HideShutdownFromLockScreen", # "ShowShutdownOnLockScreen",
-	"DisableStickyKeys",          	# "EnableStickyKeys",
-	"ShowTaskManagerDetails"        # "HideTaskManagerDetails",
-	"ShowFileOperationsDetails",    # "HideFileOperationsDetails",
-	"EnableFileDeleteConfirm",    	# "DisableFileDeleteConfirm",
+	"DisableActionCenter",			# "EnableActionCenter",
+	# "DisableLockScreen",			# "EnableLockScreen",
+	# "DisableLockScreenRS1",		# "EnableLockScreenRS1",
+	# "HideNetworkFromLockScreen",	# "ShowNetworkOnLockScreen",
+	# "HideShutdownFromLockScreen",	# "ShowShutdownOnLockScreen",
+	"DisableStickyKeys",			# "EnableStickyKeys",
+	"ShowTaskManagerDetails"		# "HideTaskManagerDetails",
+	"ShowFileOperationsDetails",	# "HideFileOperationsDetails",
+	"EnableFileDeleteConfirm",		# "DisableFileDeleteConfirm",
 	"HideTaskbarSearch",
-	# "ShowTaskbarSearchIcon",     	# "ShowTaskbarSearchBox",
-	"HideTaskView",               	# "ShowTaskView",
-	# "ShowSmallTaskbarIcons",      # "ShowLargeTaskbarIcons",
-	# "SetTaskbarCombineWhenFull",  # "SetTaskbarCombineNever",     # "SetTaskbarCombineAlways",
-	# "HideTaskbarPeopleIcon",      # "ShowTaskbarPeopleIcon",
-	"ShowTrayIcons",              	# "HideTrayIcons",
-	"DisableSearchAppInStore",    	# "EnableSearchAppInStore",
-	"DisableNewAppPrompt",        	# "EnableNewAppPrompt",
-	# "SetControlPanelSmallIcons",  # "SetControlPanelLargeIcons",  # "SetControlPanelCategories",
-	# "SetVisualFXPerformance",     # "SetVisualFXAppearance",
-	# "AddENKeyboard",              # "RemoveENKeyboard",
-	# "EnableNumlock",              # "DisableNumlock",
+	# "ShowTaskbarSearchIcon",		# "ShowTaskbarSearchBox",
+	"HideTaskView",					# "ShowTaskView",
+	"ShowSmallTaskbarIcons",		# "ShowLargeTaskbarIcons",
+	# "SetTaskbarCombineWhenFull",	# "SetTaskbarCombineNever",		# "SetTaskbarCombineAlways",
+	# "HideTaskbarPeopleIcon",		# "ShowTaskbarPeopleIcon",
+	"ShowTrayIcons",				# "HideTrayIcons",
+	"DisableSearchAppInStore",		# "EnableSearchAppInStore",
+	"DisableNewAppPrompt",			# "EnableNewAppPrompt",
+	# "SetControlPanelSmallIcons",	# "SetControlPanelLargeIcons",	# "SetControlPanelCategories",
+	"SetVisualFXPerformance",		# "SetVisualFXAppearance",
+	# "AddENKeyboard",				# "RemoveENKeyboard",
+	# "EnableNumlock",				# "DisableNumlock",
 	"EnableDarkMode",				# "DisableDarkMode",
-	"Stop-EdgePDF",
 
 	### Explorer UI Tweaks ###
-	"ShowKnownExtensions",          # "HideKnownExtensions",
-	"ShowHiddenFiles",            	# "HideHiddenFiles",
-	"HideSyncNotifications"       	# "ShowSyncNotifications",
-	"HideRecentShortcuts",        	# "ShowRecentShortcuts",
-	"SetExplorerThisPC",            # "SetExplorerQuickAccess",
-	"HideThisPCFromDesktop",		# "ShowThisPCOnDesktop",
-	# "ShowUserFolderOnDesktop",    # "HideUserFolderFromDesktop",
-	# "HideDesktopFromThisPC",      # "ShowDesktopInThisPC",
-	# "HideDesktopFromExplorer",    # "ShowDesktopInExplorer",
-	# "HideDocumentsFromThisPC",    # "ShowDocumentsInThisPC",
-	# "HideDocumentsFromExplorer",  # "ShowDocumentsInExplorer",
-	# "HideDownloadsFromThisPC",    # "ShowDownloadsInThisPC",
-	# "HideDownloadsFromExplorer",  # "ShowDownloadsInExplorer",
-	"HideMusicFromThisPC",        	# "ShowMusicInThisPC",
-	"HideMusicFromExplorer",      	# "ShowMusicInExplorer",
-	# "HidePicturesFromThisPC",     # "ShowPicturesInThisPC",
-	# "HidePicturesFromExplorer",   # "ShowPicturesInExplorer",
-	"HideVideosFromThisPC",       	# "ShowVideosInThisPC",
-	"HideVideosFromExplorer",     	# "ShowVideosInExplorer",
-	"Hide3DObjectsFromThisPC",      # "Show3DObjectsInThisPC",
-	"Hide3DObjectsFromExplorer",  	# "Show3DObjectsInExplorer",
-	# "DisableThumbnails",          # "EnableThumbnails",
-	# "DisableThumbsDB",            # "EnableThumbsDB",
+	"ShowKnownExtensions",			# "HideKnownExtensions",
+	"ShowHiddenFiles",				# "HideHiddenFiles",
+	"HideSyncNotifications"			# "ShowSyncNotifications",
+	"HideRecentShortcuts",			# "ShowRecentShortcuts",
+	"SetExplorerThisPC",			# "SetExplorerQuickAccess",
+	"ShowThisPCOnDesktop",			"HideThisPCFromDesktop",
+	# "ShowUserFolderOnDesktop",	# "HideUserFolderFromDesktop",
+	# "HideDesktopFromThisPC",		# "ShowDesktopInThisPC",
+	# "HideDesktopFromExplorer",	# "ShowDesktopInExplorer",
+	# "HideDocumentsFromThisPC",	# "ShowDocumentsInThisPC",
+	# "HideDocumentsFromExplorer",	# "ShowDocumentsInExplorer",
+	# "HideDownloadsFromThisPC",	# "ShowDownloadsInThisPC",
+	# "HideDownloadsFromExplorer",	# "ShowDownloadsInExplorer",
+	"HideMusicFromThisPC",			# "ShowMusicInThisPC",
+	"HideMusicFromExplorer",		# "ShowMusicInExplorer",
+	# "HidePicturesFromThisPC",		# "ShowPicturesInThisPC",
+	# "HidePicturesFromExplorer",	# "ShowPicturesInExplorer",
+	"HideVideosFromThisPC",			# "ShowVideosInThisPC",
+	"HideVideosFromExplorer",		# "ShowVideosInExplorer",
+	"Hide3DObjectsFromThisPC",		# "Show3DObjectsInThisPC",
+	"Hide3DObjectsFromExplorer",	# "Show3DObjectsInExplorer",
+	# "DisableThumbnails",			# "EnableThumbnails",
+	# "DisableThumbsDB",			# "EnableThumbsDB",
 
 	### Application Tweaks ###
-	"DisableOneDrive",            	# "EnableOneDrive",
-	"UninstallOneDrive",          	# "InstallOneDrive",
-	"UninstallMsftBloat",         	# "InstallMsftBloat",
-	"UninstallThirdPartyBloat",     # "InstallThirdPartyBloat",
-	# "UninstallWindowsStore",      # "InstallWindowsStore",
-	# "DisableXboxFeatures",        # "EnableXboxFeatures",
-	"DisableAdobeFlash",          	# "EnableAdobeFlash",
-	"InstallMediaPlayer",			# "UninstallMediaPlayer",
-	"UninstallInternetExplorer",  # "InstallInternetExplorer",
-	"UninstallWorkFolders",       # "InstallWorkFolders",
-	"InstallLinuxSubsystem",      # "UninstallLinuxSubsystem",
-	# "InstallHyperV",              # "UninstallHyperV",
-	"SetPhotoViewerAssociation",    # "UnsetPhotoViewerAssociation",
-	"AddPhotoViewerOpenWith",       # "RemovePhotoViewerOpenWith",
-	# "UninstallPDFPrinter",        # "InstallPDFPrinter",
-	# "UninstallXPSPrinter",        # "InstallXPSPrinter",
-	# "RemoveFaxPrinter",           # "AddFaxPrinter",
+	"DisableOneDrive",				# "EnableOneDrive",
+	"UninstallOneDrive",			# "InstallOneDrive",
+	"UninstallMsftBloat",			# "InstallMsftBloat",
+	"UninstallThirdPartyBloat",		# "InstallThirdPartyBloat",
+	# "UninstallWindowsStore",		# "InstallWindowsStore",
+	"DisableXboxFeatures",			# "EnableXboxFeatures",
+	"DisableAdobeFlash",			# "EnableAdobeFlash",
+	# "UninstallMediaPlayer",		# "InstallMediaPlayer",
+	"UninstallInternetExplorer",	# "InstallInternetExplorer",
+	"UninstallWorkFolders",			# "InstallWorkFolders",
+	# "InstallLinuxSubsystem",		# "UninstallLinuxSubsystem",
+	"InstallHyperV",				"UninstallHyperV",
+	"SetPhotoViewerAssociation",	# "UnsetPhotoViewerAssociation",
+	"AddPhotoViewerOpenWith",		# "RemovePhotoViewerOpenWith",
+	"UninstallPDFPrinter",			# "InstallPDFPrinter",
+	"UninstallXPSPrinter",			# "InstallXPSPrinter",
+	"RemoveFaxPrinter",				# "AddFaxPrinter",
 
 	### Server Specific Tweaks ###
-	# "HideServerManagerOnLogin",   # "ShowServerManagerOnLogin",
-	# "DisableShutdownTracker",     # "EnableShutdownTracker",
-	# "DisablePasswordPolicy",      # "EnablePasswordPolicy",
-	# "DisableCtrlAltDelLogin",     # "EnableCtrlAltDelLogin",
-	# "DisableIEEnhancedSecurity",  # "EnableIEEnhancedSecurity",
-	# "EnableAudio",                # "DisableAudio",
+	# "HideServerManagerOnLogin",	# "ShowServerManagerOnLogin",
+	# "DisableShutdownTracker",		# "EnableShutdownTracker",
+	# "DisablePasswordPolicy",		# "EnablePasswordPolicy",
+	# "DisableCtrlAltDelLogin",		# "EnableCtrlAltDelLogin",
+	# "DisableIEEnhancedSecurity",	# "EnableIEEnhancedSecurity",
+	# "EnableAudio",				# "DisableAudio",
 
 	### Unpinning ###
 	"UnpinStartMenuTiles",
@@ -1473,6 +1470,17 @@ Function DisableNumlock {
 	}
 }
 
+# Enable dark mode
+Function EnableDarkMode {
+  Write-Output "Enabling Dark Mode"
+	Set-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize -Name AppsUseLightTheme -Value 0
+}
+
+# Disable dark mode
+Function DisableDarkMode {
+    Write-Output "Disabling Dark Mode"
+	Remove-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize -Name AppsUseLightTheme
+}
 
 
 ##########
@@ -1925,6 +1933,11 @@ Function UninstallMsftBloat {
 	Get-AppxPackage "Microsoft.WindowsSoundRecorder" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.ZuneMusic" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.ZuneVideo" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.549981C3F5F10" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.DesktopAppInstaller" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.MixedReality.Portal" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.ScreenSketch" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.YourPhone" | Remove-AppxPackage
 }
 
 # Install default Microsoft applications
@@ -1968,6 +1981,11 @@ Function InstallMsftBloat {
 	Get-AppxPackage -AllUsers "Microsoft.WindowsSoundRecorder" | ForEach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
 	Get-AppxPackage -AllUsers "Microsoft.ZuneMusic" | ForEach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
 	Get-AppxPackage -AllUsers "Microsoft.ZuneVideo" | ForEach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
+	Get-AppxPackage -AllUsers "Microsoft.549981C3F5F10" | ForEach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
+	Get-AppxPackage -AllUsers "Microsoft.DesktopAppInstaller" | ForEach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
+	Get-AppxPackage -AllUsers "Microsoft.MixedReality.Portal" | ForEach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
+	Get-AppxPackage -AllUsers "Microsoft.ScreenSketch" | ForEach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
+	Get-AppxPackage -AllUsers "Microsoft.YourPhone" | ForEach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
 }
 # In case you have removed them for good, you can try to restore the files using installation medium as follows
 # New-Item C:\Mnt -Type Directory | Out-Null
@@ -2065,6 +2083,7 @@ Function DisableXboxFeatures {
 	Get-AppxPackage "Microsoft.XboxIdentityProvider" | Remove-AppxPackage -ErrorAction SilentlyContinue
 	Get-AppxPackage "Microsoft.XboxSpeechToTextOverlay" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.XboxGameOverlay" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.XboxGamingOverlay" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.Xbox.TCUI" | Remove-AppxPackage
 	Set-ItemProperty -Path "HKCU:\System\GameConfigStore" -Name "GameDVR_Enabled" -Type DWord -Value 0
 	If (!(Test-Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\GameDVR")) {
@@ -2080,6 +2099,7 @@ Function EnableXboxFeatures {
 	Get-AppxPackage -AllUsers "Microsoft.XboxIdentityProvider" | ForEach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
 	Get-AppxPackage -AllUsers "Microsoft.XboxSpeechToTextOverlay" | ForEach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
 	Get-AppxPackage -AllUsers "Microsoft.XboxGameOverlay" | ForEach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
+	Get-AppxPackage -AllUsers "Microsoft.XboxGamingOverlay" | ForEach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
 	Get-AppxPackage -AllUsers "Microsoft.Xbox.TCUI" | ForEach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
 	Set-ItemProperty -Path "HKCU:\System\GameConfigStore" -Name "GameDVR_Enabled" -Type DWord -Value 1
 	Remove-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\GameDVR" -Name "AllowGameDVR" -ErrorAction SilentlyContinue
@@ -2421,112 +2441,6 @@ Function Restart {
 }
 
 
-###########
-# Dark Mode
-###########
-
-Function EnableDarkMode {
-  Write-Output "Enabling Dark Mode"
-	Set-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize -Name AppsUseLightTheme -Value 0
-}
-
-Function DisableDarkMode {
-    Write-Output "Disabling Dark Mode"
-	Remove-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize -Name AppsUseLightTheme
-}
-
-##########
-# Debloat
-##########
-
-Function Stop-EdgePDF {
-    
-    #Stops edge from taking over as the default .PDF viewer    
-    Write-Output "Stopping Edge from taking over as the default .PDF viewer"
-    $NoPDF = "HKCR:\.pdf"
-    $NoProgids = "HKCR:\.pdf\OpenWithProgids"
-    $NoWithList = "HKCR:\.pdf\OpenWithList" 
-    If (!(Get-ItemProperty $NoPDF  NoOpenWith)) {
-        New-ItemProperty $NoPDF NoOpenWith 
-    }        
-    If (!(Get-ItemProperty $NoPDF  NoStaticDefaultVerb)) {
-        New-ItemProperty $NoPDF  NoStaticDefaultVerb 
-    }        
-    If (!(Get-ItemProperty $NoProgids  NoOpenWith)) {
-        New-ItemProperty $NoProgids  NoOpenWith 
-    }        
-    If (!(Get-ItemProperty $NoProgids  NoStaticDefaultVerb)) {
-        New-ItemProperty $NoProgids  NoStaticDefaultVerb 
-    }        
-    If (!(Get-ItemProperty $NoWithList  NoOpenWith)) {
-        New-ItemProperty $NoWithList  NoOpenWith
-    }        
-    If (!(Get-ItemProperty $NoWithList  NoStaticDefaultVerb)) {
-        New-ItemProperty $NoWithList  NoStaticDefaultVerb 
-    }
-            
-    #Appends an underscore '_' to the Registry key for Edge
-    $Edge = "HKCR:\AppXd4nrz8ff68srnhf9t5a8sbjyar1cr723_"
-    If (Test-Path $Edge) {
-        Set-Item $Edge AppXd4nrz8ff68srnhf9t5a8sbjyar1cr723_ 
-    }
-}
-
-Function DebloatAll {
-
-    $Bloatware = @(
-		
-		"*Microsoft.BingNews*"
-		"*Microsoft.BingWeather*"
-		"*Microsoft.GetHelp*"
-		"*Microsoft.Getstarted*"
-		"*Microsoft.Messaging*"
-		"*Microsoft.Microsoft3DViewer*"
-		"*Microsoft.MicrosoftOfficeHub*"
-		"*Microsoft.MicrosoftSolitaireCollection*"
-		"*Microsoft.NetworkSpeedTest*"
-		"*Microsoft.News*"
-		"*Microsoft.Office.Lens*"
-		"*Microsoft.Office.OneNote*"
-		"*Microsoft.Office.Sway*"
-		"*Microsoft.OneConnect*"
-		"*Microsoft.People*"
-		"*Microsoft.Print3D*"
-		"*Microsoft.SkypeApp*"
-		"*Microsoft.MicrosoftStickyNotes*"
-		"*Microsoft.Whiteboard*"
-		"*Microsoft.WindowsAlarms*"
-		"*microsoft.windowscommunicationsapps*"
-		"*Microsoft.WindowsMaps*"
-		"*Microsoft.WindowsSoundRecorder*"
-		"*Microsoft.Xbox.TCUI*"
-		"*Microsoft.XboxApp*"
-		"*Microsoft.YourPhone*"
-		"*Microsoft.ZuneMusic*"
-		"*Microsoft.ZuneVideo*"
-		"*EclipseManager*"
-		"*ActiproSoftwareLLC*"
-		"*AdobeSystemsIncorporated.AdobePhotoshopExpress*"
-		"*Duolingo-LearnLanguagesforFree*"
-		"*PandoraMediaInc*"
-		"*CandyCrush*"
-		"*BubbleWitch3Saga*"
-		"*Wunderlist*"
-		"*Flipboard*"
-		"*Twitter*"
-		"*Facebook*"
-		"*Spotify*"
-		"*Royal Revolt*"
-		"*Sway*"
-		"*Speed Test*"
-		"*Dolby*"
-    )
-    foreach ($Bloat in $Bloatware) {
-        Get-AppxPackage -Name $Bloat| Remove-AppxPackage
-        Get-AppxProvisionedPackage -Online | Where-Object DisplayName -like $Bloat | Remove-AppxProvisionedPackage -Online
-        Write-Output "Trying to remove $Bloat."
-    }
-}
 
 ##########
 # Parse parameters and apply tweaks
