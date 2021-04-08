@@ -148,7 +148,7 @@ $tweaks = @(
 	"UninstallMsftBloat",			# "InstallMsftBloat",
 	"UninstallThirdPartyBloat",		# "InstallThirdPartyBloat",
 	# "UninstallWindowsStore",		# "InstallWindowsStore",
-	"DisableXboxFeatures",			# "EnableXboxFeatures",
+	# "DisableXboxFeatures",	          "EnableXboxFeatures",
 	"DisableAdobeFlash",			# "EnableAdobeFlash",
 	# "UninstallMediaPlayer",		# "InstallMediaPlayer",
 	"UninstallInternetExplorer",		# "InstallInternetExplorer",
@@ -2023,7 +2023,7 @@ function UninstallThirdPartyBloat {
 	Get-AppxPackage "king.com.BubbleWitch3Saga" | Remove-AppxPackage
 	Get-AppxPackage "king.com.CandyCrushSodaSaga" | Remove-AppxPackage
 	Get-AppxPackage "PandoraMediaInc.29680B314EFC2" | Remove-AppxPackage
-	Get-AppxPackage "SpotifyAB.SpotifyMusic" | Remove-AppxPackage
+	#Get-AppxPackage "SpotifyAB.SpotifyMusic" | Remove-AppxPackage
 	Get-AppxPackage "WinZipComputing.WinZipUniversal" | Remove-AppxPackage
 	Get-AppxPackage "XINGAG.XING" | Remove-AppxPackage
 }
